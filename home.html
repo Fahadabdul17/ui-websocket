@@ -117,7 +117,7 @@
 
     <script>
         $(function() {
-            var socket = new WebSocket("wss://websockethad-1fa6b00239dc.herokuapp.com/ws?username=" + encodeURIComponent($('#username').val()));
+            var socket = new WebSocket("wss://websockethad-ce5d7734fa9e.herokuapp.com/ws?username=" + encodeURIComponent($('#username').val()));
 
             socket.onmessage = function(event) {
                 var message = JSON.parse(event.data);
